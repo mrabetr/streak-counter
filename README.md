@@ -1,22 +1,22 @@
-# `@jsjoeio/streak-counter` - a basic streak counter
+# `@mrabetr/streak-counter` - a basic streak counter
 
 This is a basic streak counter - inspired by Duolingo - written in TypeScript and meant for the browser (uses `localStorage`)
 
 ## Install
 
 ```shell
-yarn add @jsjoeio/streak-counter
+yarn add @mrabetr/streak-counter
 ```
 
 or
 
 ```shell
-npm install @jsjoeio/streak-counter
+npm install @mrabetr/streak-counter
 ```
 ## Usage
 
 ```shell
-import {streakCounter} from '@jsjoeio/streak-counter'
+import {streakCounter} from '@mrabetr/streak-counter'
 
 const today = new Date()
 const streak = streakCounter(localStorage, today)
