@@ -10,6 +10,10 @@ describe('streakCounter', () => {
     mockLocalStorage = mockJSDom.window.localStorage;
   });
 
+  afterEach(() => {
+    mockLocalStorage.clear()
+  });
+
   it('should return a streak object with currentCount, startDate and lastLoginDate', () => {
     // const mockLocalStorage = ''
     const date = new Date()
@@ -35,5 +39,14 @@ describe('streakCounter', () => {
 
     expect(streak.currentCount).toBe(1)
     expect(streak.lastLoginDate).toBe(dateFormatted)
+  })
+
+  it('should store the streak in localStorage', () => {
+    const date = new Date()
+    const key = 'streak'
+    streakCounter(mockLocalStorage, date)
+
+    const streakAsString = mockLocalStorage.getItem(key)
+    expect(streakAsString).not.toBeNull()
   })
 })
