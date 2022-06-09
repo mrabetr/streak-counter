@@ -1,13 +1,5 @@
 import { formattedDate } from "./utils";
-// export function streakCounter(storage: Storage, date: Date) {
-//   return {}
-// }
-
-interface Streak {
-  currentCount: number
-  startDate: string
-  lastLoginDate: string
-}
+import { Streak } from "./utils";
 
 // Used when storing in localStorage
 const KEY = 'streak'
