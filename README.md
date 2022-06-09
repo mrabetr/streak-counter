@@ -8,10 +8,12 @@ This is a basic streak counter - inspired by Duolingo - written in TypeScript an
 yarn add @jsjoeio/streak-counter
 ```
 
+or
+
 ```shell
 npm install @jsjoeio/streak-counter
 ```
-## Install
+## Usage
 
 ```shell
 import {streakCounter} from '@jsjoeio/streak-counter'
