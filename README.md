@@ -15,7 +15,9 @@ npm install @mrabetr/streak-counter
 ```
 ## Usage
 
-```shell
+[![Edit streak-counter (ts-course) (forked)](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/streak-counter-ts-course-forked-8xf2qs?fontsize=14&hidenavigation=1&theme=dark)
+
+```typescript
 import {streakCounter} from '@mrabetr/streak-counter'
 
 const today = new Date()
